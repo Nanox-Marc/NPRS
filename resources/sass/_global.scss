@@ -1,0 +1,549 @@
+p {
+    margin-bottom: 0px !important;
+    margin: 0px;
+}
+
+.main-container {
+    
+    display: flex;
+    padding: 15px 0px;
+
+    .holder {
+        width: 100%;
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    .holder-main{
+        border: solid 1px black;
+       
+
+        .emp-count-container {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .emp-count {
+            display: flex;
+            border: solid 1px black;
+            width: 100%;
+            max-width: max-content;
+            padding: 10px 15px;
+            background-color: #494999;
+            color: white;
+            align-items: center;
+
+            .count-label {
+                font-size: 20px;
+                text-transform: uppercase;
+                font-weight: 600;
+                padding-right: 10px;
+            }
+
+            .count-data {
+                font-size: 20px;
+                text-transform: uppercase;
+                font-weight: 600;
+            }
+        }
+
+        .random-btn {
+            width: 100%;
+            font-size: 50px;
+            margin-top: 15px;
+        }
+
+        .price-group {
+            display: flex;
+            font-size: 20px;
+            align-items: center;
+
+            .price-label {
+               width: 140px;
+                font-weight: 600;
+            }
+        }
+        
+        .displayBox {
+            width: 100%;
+            max-width: 100%;
+            height: 200px;
+            border: solid 1px black;
+            margin: 15px 0px;
+            border-radius: 10px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           
+            text-align: center;
+            flex-direction: column;
+
+            .winner-name {
+                text-transform: uppercase;
+                font-size: 30px;
+            }
+
+            .winner-details {
+                text-transform: uppercase;
+                font-size: 15px;            
+            }
+        }
+
+        .selection-holder {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 15px;
+
+            .btn-upload{
+                width: 100%;
+            }
+
+            .holder-text {
+                display: flex;
+                width: 100%;
+                font-size: 20px;
+
+                .file-label {
+                    padding-right: 10px;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+
+    .holder-list {
+        padding-top: 0px;
+        padding-bottom: 0px;
+
+        .table-holder {
+            height: 550px;
+            border: solid 1px black;
+
+            .dataTables_wrapper {
+                padding: 15px;
+               
+            }
+
+            .dt-buttons {
+                display: flex;
+                width: 100%;
+                justify-content: flex-end;
+
+                .dt-button {
+                    color: #fff;
+                    background-color: #0069d9;
+                    border-color: #0062cc;
+                    width: 120px;
+                }
+            }
+            
+            .winner-title {
+                text-align: center;
+                margin: 15px 50px;
+                font-size: 20px;
+                font-weight: 600;
+                background-color: #1f1f56;
+                color: white;
+                padding: 5px;
+
+                display: none;
+            }
+
+            .tbl-list-winners {
+                font-size: 13px;
+                border: solid 1px grey;
+                
+            }
+        }
+    }
+}
+
+.duplicate-entry-modal {
+
+    .modal-dialog {
+        width: 100%;
+        max-width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 100px;
+
+        .modal-content {
+            width: 800px;
+        }
+    }
+
+
+    .modal-body{
+        text-align: center;
+        padding: 40px 10px;
+
+        .fa {
+            font-size: 100px;
+            font-weight: 700;
+            color: #ff4a4a;
+            margin-bottom: 15px;
+        }
+    }
+
+    .modal-title {
+        font-size: 40px;
+        font-weight: 700;
+        color: #ff4a4a;
+    }
+
+    .modal-text {
+        font-size: 20px;
+
+        .dupSpan {
+            font-weight: 700;
+        }
+    }
+}
+
+.winner-entry-modal {
+
+    .modal-dialog {
+        width: 100%;
+        max-width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 85px;
+
+        .modal-content {
+            width: 900px;
+            height: 450px;
+            background-image: url(/NPRS/resources/assets/winner-bg.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: right;
+
+            border: solid 2px white;
+        }
+    }
+
+
+    .modal-body{
+        text-align: center;
+        padding: 40px 30px;
+        line-height: 40px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .fa {
+            font-size: 100px;
+            font-weight: 700;
+            color: white;
+            margin-bottom: 15px;
+        }
+    }
+
+    .modal-title {
+        font-size: 40px;
+        font-weight: 700;
+        color: white;
+    }
+
+    .modal-text {
+        font-size: 60px;
+        text-transform: uppercase;
+        font-weight: 700;
+        color: white;
+        line-height: 60px;
+
+        .winIDSpan {
+            font-size: 30px;
+        }
+    }
+
+    .modal-winwinName {
+        background-color: rgb(255 255 255 / 21%);
+        padding: 15px 0px;
+    }
+
+    .modal-for-text {
+        margin-top: 40px;
+        font-size: 25px;
+        color: white;
+    }
+
+    .modal-prize-text {
+        font-size: 25px!important;
+        text-transform: uppercase;
+        background-color: white;
+        color: black;
+        padding: 10px 70px;
+        font-weight: 700;
+        max-width: max-content;
+        align-self: center;
+
+        line-height: 15px;
+       
+    }
+
+    .winner-id-text {
+        line-height: 0px;
+        margin-top: 10px;
+    }
+}
+
+.raffle-holder{
+    background-image: url(/NPRS/resources/assets/black-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 100vh;
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+
+    .center-item {
+        width: 700px;
+
+        .logo-holder {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 50px;
+
+            .nanox-logo {
+                width: 280px;
+                filter: drop-shadow(2px 4px 6px black);
+            }
+        }
+
+        .selection-holder {
+            color: white;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+
+            .holder-text {
+                
+                display: flex;
+                margin-bottom: 10px;
+                
+                .file-text {
+                    font-size: 20px;
+                }
+
+                .file-label {
+                    margin-right: 10px;
+                    font-size: 20px;
+                }
+            }
+
+            .btn-upload {
+                font-size: 12px;
+            }
+        }
+
+        .price-group {
+            .price-label {
+                font-size: 50px;
+                color: white;
+            }
+
+            .prize-input {
+                font-size: 50px;
+                text-align: center;
+                text-transform: uppercase;
+            }
+
+            .random-btn {
+                width: 100%;
+                margin-top: 15px;
+                font-size: 30px;
+                background-color: #D5AF37;
+                border: solid 1px #D4AF37;
+            }
+
+            .random-btn:hover {
+                background-color: white;
+                color: #926F34;
+                border: solid 1px #926F34;
+            }
+        }
+
+        .detail-group {
+            .draw-text {
+                font-size: 22px;
+                color: white;
+                margin-top: 10px;
+                text-align: center;
+
+                .draw-text-num {
+                    color: #ffc612;
+                    font-weight: 700;
+                }
+
+                .totNumber {
+                    font-weight: 700;
+                }
+            }
+        }
+
+        .winner-group {
+            display: flex;
+            justify-content: center;
+            margin-top: 15px;
+            
+            .btn-win-list {
+                color: wheat;
+                text-transform: uppercase;
+                border: solid 1px wheat;
+                font-size: 15px; 
+            }
+        }
+    }
+}
+
+.modal-display-winner {
+    .modal-dialog {
+        max-width: 1000px;
+    }
+
+    .table-holder {
+        padding: 15px;
+
+        .winner-title {
+            text-align: center;
+            font-size: 25px;
+            font-weight: 600;
+        }
+
+        .tbl-list-winners {
+            font-size: 13px;
+        }
+    }
+}
+
+.congrats-winner {
+    .modal-dialog {
+        max-width: 1100px;
+
+        min-height: calc(100% - (1.75rem * 2));
+        display: flex;
+        align-items: center;
+
+        .modal-content {
+            background-image: url(/NPRS/resources/assets/winner-bg1.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 500px;
+            border: solid 1px white;
+
+            .modal-body{
+                color: white;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                padding: 20px 20px;
+
+                .emp-greetings {
+                    font-size: 45px;
+                    font-weight: 700;
+                    text-shadow: 2px 2px 8px black;
+                }
+
+                .emp-name {
+                    font-size: 70px;
+                    font-weight: 700;
+                    line-height: 60px;
+                    background-color: #ffffff40;
+                    margin-top: 0px;
+                    text-transform: uppercase;
+                    padding: 15px 30px;
+                    text-shadow: 2px 2px 8px black;
+                }
+
+                .emp-details {
+                    display: none;
+                    width: 100%;
+                    justify-content: center;
+                    font-size: 22px;
+                    text-transform: uppercase;
+                    margin-top: 0px;
+                    text-shadow: 2px 2px 8px black;
+
+                    .empt-id {
+                        margin-right: 50px;
+                    }
+                }
+
+                .emp-win-item {
+                    margin-top: 15px;
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    .emp-win-greetings {
+                        font-size: 25px;
+                        font-weight: 600;
+                        text-shadow: 2px 2px 8px black;
+                    }
+
+                    .emp-win-prize {
+                        font-size: 30px;
+                        font-weight: 600;
+                        background-color: white;
+                        color: black;
+                        text-transform: uppercase;
+                        max-width: max-content;
+                        padding: 5px 50px;
+                    }
+                }
+
+                .decisionButton {                 
+                    position: absolute;
+                    right: 25px;
+                    top: 25px;
+
+                    .btn-decision {
+                        color: white;
+                        border: solid 1px white;
+                        font-size: 16px;
+                    }
+
+                    .btn-decision:hover {
+                        background-color: white;
+                        color: red;
+                        cursor: pointer;
+                    }
+                }
+
+                .decisionButtonClaim {                 
+                    margin-top: 20px;
+
+                    .btn-decision {
+                        color: white;
+                        border: solid 1px white;
+                        font-size: 18px;
+                        width: 140px;
+                        height: 45px;
+                        font-weight: 600;
+                    }
+
+                    .btn-decision:hover {
+                        background-color: white;
+                        color: red;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}
